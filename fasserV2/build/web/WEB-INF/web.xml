@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>ajoute</servlet-name>
+        <servlet-class>controlleur.ajoute</servlet-class>
+        <init-param>
+            <param-name>initial_counter_value</param-name>
+            <param-value>50</param-value>
+            <description>Valeur initiale du compteur</description>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>destroy</servlet-name>
+        <servlet-class>controlleur.destroy</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>edit</servlet-name>
+        <servlet-class>controlleur.edit</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>lister</servlet-name>
+        <servlet-class>controlleur.lister</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>existe</servlet-name>
+        <servlet-class>controlleur.existe</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ajoute</servlet-name>
+        <url-pattern>/ajoute</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>destroy</servlet-name>
+        <url-pattern>/destroy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>edit</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>lister</servlet-name>
+        <url-pattern>/lister</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>existe</servlet-name>
+        <url-pattern>/existe</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
