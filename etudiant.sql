@@ -6,6 +6,7 @@
 -- Généré le : jeu. 16 nov. 2023 à 17:55
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
+--this mySql data base i work with xampp 
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
